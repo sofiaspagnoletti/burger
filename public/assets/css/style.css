@@ -1,0 +1,6 @@
+.jumbotron {
+    background-image: url("../img/burgerbackground.jpeg");
+    background-size: cover;
+    color: white;
+    letter-spacing: 6px;
+}
