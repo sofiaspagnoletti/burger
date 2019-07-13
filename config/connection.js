@@ -4,24 +4,17 @@ var connection;
 console.log("DATABASE INIT");
 
 if(process.env.JAWSDB_URL){
-  console.log("DATABASE INIT - JAWS");
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-  console.log("DATABASE INIT - NO JAWS");
-  console.log("DATABASE INIT - " + process.env);
-  console.log("DATABASE INIT - CREATING CONNECTION");
   connection = mysql.createConnection({
-    host: "localhost",
-  user: "root",
-  password: "123123123",
-  database: "burgers_db"
+    host: "qzkp8ry756433yd4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "pgs8o25el39wzfa6",
+  password: "wzm8ghiqwyxg5ilw",
+  database: "ozu8dsl1g5unxcjk"
   });
-  console.log("DATABASE INIT - CONNECTION FINISHED");
 }
 
-console.log("DATABASE INIT - TRY TO CONNECT");
 connection.connect();
-console.log("DATABASE INIT - CONNECT FINISHED");
 
 // var connection = mysql.createConnection({
 //   host: "localhost",
