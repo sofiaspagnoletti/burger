@@ -6,7 +6,7 @@ Whenever a user submits a burger's name, the app will display the burger on the 
 This burger app stores every burger name in a database. 
 
 ### Prerequisites
-This app is hosted in Heroku: 
+This app is hosted in Heroku: https://stark-gorge-51372.herokuapp.com/
 
 ### Built With
 MySQL, Node, Express, Handlebars and a homemade ORM.
