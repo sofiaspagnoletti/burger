@@ -1,7 +1,10 @@
 var mysql = require("mysql");
 var connection;
 
+console.log("DATABASE INIT");
+
 if(process.env.JAWSDB_URL){
+  console.log("DATABASE INIT - JAWS");
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
